@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Investigating Video Game Preferences</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>遊戲推薦</h1>
+    <p>我們想知道您最喜歡的遊戲並將其推薦給其他人。請填寫下面的表格：</p>
+
+    <form action="recommendation.php" method="POST">
+        <label for="name">名字:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="game">最喜歡的遊戲:</label>
+        <input type="text" id="game" name="game" required>
+
+        <label for="reason">為什麼推薦:</label>
+        <textarea id="reason" name="reason" required></textarea>
+
+        <input type="submit" value="上傳">
+    </form>
+</body>
+</html>
